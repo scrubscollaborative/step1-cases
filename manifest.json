@@ -1,0 +1,3761 @@
+{
+  "version": "1.0",
+  "updated": "2026-06-05",
+  "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main",
+  "cases": [
+    {
+      "id": "lidc-0078-n1",
+      "title": "Lung Adenocarcinoma \u2014 CT Nodule 1 (z=1482mm)",
+      "topic": "Pulmonary Nodule \u2014 CT",
+      "system": "Pulmonary",
+      "modality": "radiology",
+      "submodality": "CT Chest",
+      "source_dataset": "LIDC-IDRI (Lung Image Database Consortium)",
+      "source_url": "https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "primary_citation": "Armato SG III, McLennan G, Bidaut L, et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys. 2011;38(2):915\u2013931.",
+      "doi": "10.1118/1.3528204",
+      "secondary_citation": "Clark K, Vendt B, Smith K, et al. The Cancer Imaging Archive (TCIA). J Digit Imaging. 2013;26(6):1045\u20131057.",
+      "secondary_doi": "10.1007/s10278-013-9622-7",
+      "accession": "LIDC-IDRI-0078",
+      "annotation_method": "DICOM SEG \u2014 4/4 radiologist independent reads; pixel-level nodule contours; union + consensus masks",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_reference": "Armato SG III, et al. Med Phys. 2011;38(2):915\u2013931.",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/lidc-0078-n1/image.jpg",
+      "thumbnail": "cases/lidc-0078-n1/thumb.jpg",
+      "description": "CT chest from LIDC-IDRI-0078, Nodule 1. Slice at z=1481.5mm \u2014 the axial level showing the maximum cross-sectional area of this nodule. Annotations from 4/4 independent radiologist reads, provided as DICOM SEG objects.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Nodule outline (all readers)",
+          "description": "Outer boundary of nodule 1 \u2014 union of all 4 reader annotations on this slice (z=1481.5mm). Pulmonary nodule \u2014 expert contour from LIDC-IDRI DICOM SEG annotations (4 independent radiologist reads). Step 1: Fleischner criteria guide management: <6mm low-risk = no follow-up; 6\u20138mm = CT at 6\u201312 months; >8mm = PET/CT, biopsy, or CT at 3 months. Spiculated margins, upper lobe location, and smoking history increase malignancy risk. Adenocarcinoma: peripheral, TTF-1+, EGFR (non-smokers) / KRAS (smokers) mutations.",
+          "color": "#ff4444",
+          "type": "polygon",
+          "coords": [
+            [
+              0.6465,
+              0.6377
+            ],
+            [
+              0.6357,
+              0.6348
+            ],
+            [
+              0.6289,
+              0.6279
+            ],
+            [
+              0.624,
+              0.6191
+            ],
+            [
+              0.6211,
+              0.6123
+            ],
+            [
+              0.6191,
+              0.6104
+            ],
+            [
+              0.626,
+              0.6035
+            ],
+            [
+              0.6201,
+              0.5957
+            ],
+            [
+              0.6123,
+              0.5898
+            ],
+            [
+              0.6094,
+              0.585
+            ],
+            [
+              0.6182,
+              0.5898
+            ],
+            [
+              0.627,
+              0.5947
+            ],
+            [
+              0.6406,
+              0.5947
+            ],
+            [
+              0.6533,
+              0.5938
+            ],
+            [
+              0.6592,
+              0.5859
+            ],
+            [
+              0.667,
+              0.5898
+            ],
+            [
+              0.6699,
+              0.6006
+            ],
+            [
+              0.6748,
+              0.6094
+            ],
+            [
+              0.6758,
+              0.6221
+            ],
+            [
+              0.6709,
+              0.6289
+            ],
+            [
+              0.6602,
+              0.6318
+            ],
+            [
+              0.6494,
+              0.6348
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 union",
+          "_n_readers": 4
+        },
+        {
+          "id": "f2",
+          "label": "Consensus core (\u226550% readers)",
+          "description": "Region agreed upon by \u22652 of 4 readers \u2014 high-confidence nodule core. The margin is where inter-reader variability is highest; the core has the strongest consensus. Step 1: CT density \u2014 solid (highest risk), part-solid, pure GGO (AIS).",
+          "color": "#44aaff",
+          "type": "polygon",
+          "coords": [
+            [
+              0.6465,
+              0.6357
+            ],
+            [
+              0.6387,
+              0.6338
+            ],
+            [
+              0.6318,
+              0.6309
+            ],
+            [
+              0.6289,
+              0.624
+            ],
+            [
+              0.626,
+              0.6172
+            ],
+            [
+              0.6221,
+              0.6113
+            ],
+            [
+              0.626,
+              0.6055
+            ],
+            [
+              0.624,
+              0.5977
+            ],
+            [
+              0.6289,
+              0.5967
+            ],
+            [
+              0.6367,
+              0.5947
+            ],
+            [
+              0.6465,
+              0.5947
+            ],
+            [
+              0.6543,
+              0.5928
+            ],
+            [
+              0.6582,
+              0.5869
+            ],
+            [
+              0.6641,
+              0.5869
+            ],
+            [
+              0.667,
+              0.5938
+            ],
+            [
+              0.6689,
+              0.6016
+            ],
+            [
+              0.6729,
+              0.6074
+            ],
+            [
+              0.6729,
+              0.6172
+            ],
+            [
+              0.6719,
+              0.626
+            ],
+            [
+              0.666,
+              0.6299
+            ],
+            [
+              0.6582,
+              0.6318
+            ],
+            [
+              0.6504,
+              0.6338
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 intersection",
+          "_n_readers": 4
+        }
+      ],
+      "_annotation_method_detail": "DICOM SEG Nodule 1 \u2014 4 reader(s), 6 annotated slice(s); best slice rendered",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 1,
+      "total_in_group": 4,
+      "keywords": [
+        "pulmonary nodule",
+        "Fleischner",
+        "CT",
+        "LDCT",
+        "spiculation",
+        "ground glass",
+        "solid",
+        "part-solid",
+        "adenocarcinoma",
+        "LIDC-IDRI"
+      ],
+      "license_statement": "CC BY 3.0 \u2014 LIDC-IDRI (Lung Image Database Consortium). Cite: Armato SG III et al., Med Phys. 2011;38(2):915\u2013931. DOI: 10.1118/1.3528204. Via The Cancer Imaging Archive.",
+      "files": [
+        "image.jpg",
+        "image_qc.jpg",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/lidc-0078-n1"
+    },
+    {
+      "id": "lidc-0078-n2",
+      "title": "Lung Adenocarcinoma \u2014 CT Nodule 2 (z=1542mm)",
+      "topic": "Pulmonary Nodule \u2014 CT",
+      "system": "Pulmonary",
+      "modality": "radiology",
+      "submodality": "CT Chest",
+      "source_dataset": "LIDC-IDRI (Lung Image Database Consortium)",
+      "source_url": "https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "primary_citation": "Armato SG III, McLennan G, Bidaut L, et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys. 2011;38(2):915\u2013931.",
+      "doi": "10.1118/1.3528204",
+      "secondary_citation": "Clark K, Vendt B, Smith K, et al. The Cancer Imaging Archive (TCIA). J Digit Imaging. 2013;26(6):1045\u20131057.",
+      "secondary_doi": "10.1007/s10278-013-9622-7",
+      "accession": "LIDC-IDRI-0078",
+      "annotation_method": "DICOM SEG \u2014 4/4 radiologist independent reads; pixel-level nodule contours; union + consensus masks",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_reference": "Armato SG III, et al. Med Phys. 2011;38(2):915\u2013931.",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/lidc-0078-n2/image.jpg",
+      "thumbnail": "cases/lidc-0078-n2/thumb.jpg",
+      "description": "CT chest from LIDC-IDRI-0078, Nodule 2. Slice at z=1541.5mm \u2014 the axial level showing the maximum cross-sectional area of this nodule. Annotations from 4/4 independent radiologist reads, provided as DICOM SEG objects.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Nodule outline (all readers)",
+          "description": "Outer boundary of nodule 2 \u2014 union of all 4 reader annotations on this slice (z=1541.5mm). Pulmonary nodule \u2014 expert contour from LIDC-IDRI DICOM SEG annotations (4 independent radiologist reads). Step 1: Fleischner criteria guide management: <6mm low-risk = no follow-up; 6\u20138mm = CT at 6\u201312 months; >8mm = PET/CT, biopsy, or CT at 3 months. Spiculated margins, upper lobe location, and smoking history increase malignancy risk. Adenocarcinoma: peripheral, TTF-1+, EGFR (non-smokers) / KRAS (smokers) mutations.",
+          "color": "#ff4444",
+          "type": "polygon",
+          "coords": [
+            [
+              0.7031,
+              0.3584
+            ],
+            [
+              0.6953,
+              0.3545
+            ],
+            [
+              0.6885,
+              0.3496
+            ],
+            [
+              0.6855,
+              0.3408
+            ],
+            [
+              0.6826,
+              0.332
+            ],
+            [
+              0.6826,
+              0.3242
+            ],
+            [
+              0.6865,
+              0.3164
+            ],
+            [
+              0.6953,
+              0.3135
+            ],
+            [
+              0.7002,
+              0.3066
+            ],
+            [
+              0.7051,
+              0.2998
+            ],
+            [
+              0.7109,
+              0.3018
+            ],
+            [
+              0.7158,
+              0.3086
+            ],
+            [
+              0.7188,
+              0.3174
+            ],
+            [
+              0.7256,
+              0.3164
+            ],
+            [
+              0.7295,
+              0.3184
+            ],
+            [
+              0.7256,
+              0.3262
+            ],
+            [
+              0.7256,
+              0.334
+            ],
+            [
+              0.7236,
+              0.3438
+            ],
+            [
+              0.7178,
+              0.3496
+            ],
+            [
+              0.7129,
+              0.3564
+            ],
+            [
+              0.7031,
+              0.3584
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 union",
+          "_n_readers": 4
+        },
+        {
+          "id": "f2",
+          "label": "Consensus core (\u226550% readers)",
+          "description": "Region agreed upon by \u22652 of 4 readers \u2014 high-confidence nodule core. The margin is where inter-reader variability is highest; the core has the strongest consensus. Step 1: CT density \u2014 solid (highest risk), part-solid, pure GGO (AIS).",
+          "color": "#44aaff",
+          "type": "polygon",
+          "coords": [
+            [
+              0.7031,
+              0.3584
+            ],
+            [
+              0.6973,
+              0.3545
+            ],
+            [
+              0.6914,
+              0.3506
+            ],
+            [
+              0.6885,
+              0.3438
+            ],
+            [
+              0.6865,
+              0.3359
+            ],
+            [
+              0.6846,
+              0.3281
+            ],
+            [
+              0.6865,
+              0.3203
+            ],
+            [
+              0.6895,
+              0.3135
+            ],
+            [
+              0.6973,
+              0.3115
+            ],
+            [
+              0.7012,
+              0.3057
+            ],
+            [
+              0.7051,
+              0.2998
+            ],
+            [
+              0.71,
+              0.3008
+            ],
+            [
+              0.7139,
+              0.3066
+            ],
+            [
+              0.7158,
+              0.3145
+            ],
+            [
+              0.7207,
+              0.3193
+            ],
+            [
+              0.7266,
+              0.3154
+            ],
+            [
+              0.7295,
+              0.3184
+            ],
+            [
+              0.7256,
+              0.3242
+            ],
+            [
+              0.7256,
+              0.334
+            ],
+            [
+              0.7227,
+              0.3408
+            ],
+            [
+              0.7178,
+              0.3457
+            ],
+            [
+              0.7148,
+              0.3525
+            ],
+            [
+              0.708,
+              0.3555
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 intersection",
+          "_n_readers": 4
+        }
+      ],
+      "_annotation_method_detail": "DICOM SEG Nodule 2 \u2014 4 reader(s), 6 annotated slice(s); best slice rendered",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 2,
+      "total_in_group": 4,
+      "keywords": [
+        "pulmonary nodule",
+        "Fleischner",
+        "CT",
+        "LDCT",
+        "spiculation",
+        "ground glass",
+        "solid",
+        "part-solid",
+        "adenocarcinoma",
+        "LIDC-IDRI"
+      ],
+      "license_statement": "CC BY 3.0 \u2014 LIDC-IDRI (Lung Image Database Consortium). Cite: Armato SG III et al., Med Phys. 2011;38(2):915\u2013931. DOI: 10.1118/1.3528204. Via The Cancer Imaging Archive.",
+      "files": [
+        "image.jpg",
+        "image_qc.jpg",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/lidc-0078-n2"
+    },
+    {
+      "id": "lidc-0078-n3",
+      "title": "Lung Adenocarcinoma \u2014 CT Nodule 3 (z=1544mm)",
+      "topic": "Pulmonary Nodule \u2014 CT",
+      "system": "Pulmonary",
+      "modality": "radiology",
+      "submodality": "CT Chest",
+      "source_dataset": "LIDC-IDRI (Lung Image Database Consortium)",
+      "source_url": "https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "primary_citation": "Armato SG III, McLennan G, Bidaut L, et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys. 2011;38(2):915\u2013931.",
+      "doi": "10.1118/1.3528204",
+      "secondary_citation": "Clark K, Vendt B, Smith K, et al. The Cancer Imaging Archive (TCIA). J Digit Imaging. 2013;26(6):1045\u20131057.",
+      "secondary_doi": "10.1007/s10278-013-9622-7",
+      "accession": "LIDC-IDRI-0078",
+      "annotation_method": "DICOM SEG \u2014 1/4 radiologist independent reads; pixel-level nodule contours; union + consensus masks",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_reference": "Armato SG III, et al. Med Phys. 2011;38(2):915\u2013931.",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/lidc-0078-n3/image.jpg",
+      "thumbnail": "cases/lidc-0078-n3/thumb.jpg",
+      "description": "CT chest from LIDC-IDRI-0078, Nodule 3. Slice at z=1544.5mm \u2014 the axial level showing the maximum cross-sectional area of this nodule. Annotations from 1/4 independent radiologist reads, provided as DICOM SEG objects.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Nodule outline (all readers)",
+          "description": "Outer boundary of nodule 3 \u2014 union of all 1 reader annotations on this slice (z=1544.5mm). Pulmonary nodule \u2014 expert contour from LIDC-IDRI DICOM SEG annotations (4 independent radiologist reads). Step 1: Fleischner criteria guide management: <6mm low-risk = no follow-up; 6\u20138mm = CT at 6\u201312 months; >8mm = PET/CT, biopsy, or CT at 3 months. Spiculated margins, upper lobe location, and smoking history increase malignancy risk. Adenocarcinoma: peripheral, TTF-1+, EGFR (non-smokers) / KRAS (smokers) mutations.",
+          "color": "#ff4444",
+          "type": "polygon",
+          "coords": [
+            [
+              0.6582,
+              0.6865
+            ],
+            [
+              0.6562,
+              0.6865
+            ],
+            [
+              0.6543,
+              0.6865
+            ],
+            [
+              0.6533,
+              0.6855
+            ],
+            [
+              0.6523,
+              0.6846
+            ],
+            [
+              0.6514,
+              0.6836
+            ],
+            [
+              0.6514,
+              0.6816
+            ],
+            [
+              0.6514,
+              0.6797
+            ],
+            [
+              0.6523,
+              0.6787
+            ],
+            [
+              0.6533,
+              0.6777
+            ],
+            [
+              0.6533,
+              0.6758
+            ],
+            [
+              0.6543,
+              0.6748
+            ],
+            [
+              0.6562,
+              0.6748
+            ],
+            [
+              0.6582,
+              0.6748
+            ],
+            [
+              0.6592,
+              0.6758
+            ],
+            [
+              0.6602,
+              0.6768
+            ],
+            [
+              0.6611,
+              0.6777
+            ],
+            [
+              0.6611,
+              0.6797
+            ],
+            [
+              0.6611,
+              0.6816
+            ],
+            [
+              0.6611,
+              0.6836
+            ],
+            [
+              0.6602,
+              0.6846
+            ],
+            [
+              0.6592,
+              0.6855
+            ],
+            [
+              0.6582,
+              0.6865
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 union",
+          "_n_readers": 1
+        }
+      ],
+      "_annotation_method_detail": "DICOM SEG Nodule 3 \u2014 1 reader(s), 2 annotated slice(s); best slice rendered",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 3,
+      "total_in_group": 4,
+      "keywords": [
+        "pulmonary nodule",
+        "Fleischner",
+        "CT",
+        "LDCT",
+        "spiculation",
+        "ground glass",
+        "solid",
+        "part-solid",
+        "adenocarcinoma",
+        "LIDC-IDRI"
+      ],
+      "license_statement": "CC BY 3.0 \u2014 LIDC-IDRI (Lung Image Database Consortium). Cite: Armato SG III et al., Med Phys. 2011;38(2):915\u2013931. DOI: 10.1118/1.3528204. Via The Cancer Imaging Archive.",
+      "files": [
+        "image.jpg",
+        "image_qc.jpg",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/lidc-0078-n3"
+    },
+    {
+      "id": "lidc-0078-n4",
+      "title": "Lung Adenocarcinoma \u2014 CT Nodule 4 (z=1604mm)",
+      "topic": "Pulmonary Nodule \u2014 CT",
+      "system": "Pulmonary",
+      "modality": "radiology",
+      "submodality": "CT Chest",
+      "source_dataset": "LIDC-IDRI (Lung Image Database Consortium)",
+      "source_url": "https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "primary_citation": "Armato SG III, McLennan G, Bidaut L, et al. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI). Med Phys. 2011;38(2):915\u2013931.",
+      "doi": "10.1118/1.3528204",
+      "secondary_citation": "Clark K, Vendt B, Smith K, et al. The Cancer Imaging Archive (TCIA). J Digit Imaging. 2013;26(6):1045\u20131057.",
+      "secondary_doi": "10.1007/s10278-013-9622-7",
+      "accession": "LIDC-IDRI-0078",
+      "annotation_method": "DICOM SEG \u2014 4/4 radiologist independent reads; pixel-level nodule contours; union + consensus masks",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_reference": "Armato SG III, et al. Med Phys. 2011;38(2):915\u2013931.",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/lidc-0078-n4/image.jpg",
+      "thumbnail": "cases/lidc-0078-n4/thumb.jpg",
+      "description": "CT chest from LIDC-IDRI-0078, Nodule 4. Slice at z=1604.5mm \u2014 the axial level showing the maximum cross-sectional area of this nodule. Annotations from 4/4 independent radiologist reads, provided as DICOM SEG objects.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Nodule outline (all readers)",
+          "description": "Outer boundary of nodule 4 \u2014 union of all 4 reader annotations on this slice (z=1604.5mm). Pulmonary nodule \u2014 expert contour from LIDC-IDRI DICOM SEG annotations (4 independent radiologist reads). Step 1: Fleischner criteria guide management: <6mm low-risk = no follow-up; 6\u20138mm = CT at 6\u201312 months; >8mm = PET/CT, biopsy, or CT at 3 months. Spiculated margins, upper lobe location, and smoking history increase malignancy risk. Adenocarcinoma: peripheral, TTF-1+, EGFR (non-smokers) / KRAS (smokers) mutations.",
+          "color": "#ff4444",
+          "type": "polygon",
+          "coords": [
+            [
+              0.6543,
+              0.5127
+            ],
+            [
+              0.6445,
+              0.5088
+            ],
+            [
+              0.6377,
+              0.502
+            ],
+            [
+              0.6396,
+              0.4902
+            ],
+            [
+              0.6396,
+              0.4766
+            ],
+            [
+              0.6357,
+              0.4668
+            ],
+            [
+              0.6387,
+              0.4561
+            ],
+            [
+              0.6445,
+              0.4482
+            ],
+            [
+              0.6514,
+              0.4414
+            ],
+            [
+              0.6562,
+              0.4443
+            ],
+            [
+              0.665,
+              0.4492
+            ],
+            [
+              0.6758,
+              0.4482
+            ],
+            [
+              0.6865,
+              0.4512
+            ],
+            [
+              0.6924,
+              0.459
+            ],
+            [
+              0.7012,
+              0.46
+            ],
+            [
+              0.7041,
+              0.4707
+            ],
+            [
+              0.7002,
+              0.4805
+            ],
+            [
+              0.7002,
+              0.4902
+            ],
+            [
+              0.6943,
+              0.498
+            ],
+            [
+              0.6875,
+              0.5049
+            ],
+            [
+              0.6758,
+              0.5068
+            ],
+            [
+              0.668,
+              0.5088
+            ],
+            [
+              0.6562,
+              0.5107
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 union",
+          "_n_readers": 4
+        },
+        {
+          "id": "f2",
+          "label": "Consensus core (\u226550% readers)",
+          "description": "Region agreed upon by \u22652 of 4 readers \u2014 high-confidence nodule core. The margin is where inter-reader variability is highest; the core has the strongest consensus. Step 1: CT density \u2014 solid (highest risk), part-solid, pure GGO (AIS).",
+          "color": "#44aaff",
+          "type": "polygon",
+          "coords": [
+            [
+              0.6582,
+              0.5107
+            ],
+            [
+              0.6455,
+              0.5098
+            ],
+            [
+              0.6396,
+              0.502
+            ],
+            [
+              0.6387,
+              0.4912
+            ],
+            [
+              0.6396,
+              0.4785
+            ],
+            [
+              0.6436,
+              0.4688
+            ],
+            [
+              0.6426,
+              0.4561
+            ],
+            [
+              0.6475,
+              0.4492
+            ],
+            [
+              0.6602,
+              0.4482
+            ],
+            [
+              0.6699,
+              0.4521
+            ],
+            [
+              0.6797,
+              0.4482
+            ],
+            [
+              0.6855,
+              0.4561
+            ],
+            [
+              0.6904,
+              0.4648
+            ],
+            [
+              0.6992,
+              0.4658
+            ],
+            [
+              0.7002,
+              0.4746
+            ],
+            [
+              0.6963,
+              0.4844
+            ],
+            [
+              0.6963,
+              0.4941
+            ],
+            [
+              0.6914,
+              0.5029
+            ],
+            [
+              0.6777,
+              0.5029
+            ],
+            [
+              0.668,
+              0.5068
+            ],
+            [
+              0.6582,
+              0.5107
+            ]
+          ],
+          "_annotation_source": "LIDC-IDRI DICOM SEG \u2014 intersection",
+          "_n_readers": 4
+        }
+      ],
+      "_annotation_method_detail": "DICOM SEG Nodule 4 \u2014 4 reader(s), 8 annotated slice(s); best slice rendered",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 4,
+      "total_in_group": 4,
+      "keywords": [
+        "pulmonary nodule",
+        "Fleischner",
+        "CT",
+        "LDCT",
+        "spiculation",
+        "ground glass",
+        "solid",
+        "part-solid",
+        "adenocarcinoma",
+        "LIDC-IDRI"
+      ],
+      "license_statement": "CC BY 3.0 \u2014 LIDC-IDRI (Lung Image Database Consortium). Cite: Armato SG III et al., Med Phys. 2011;38(2):915\u2013931. DOI: 10.1118/1.3528204. Via The Cancer Imaging Archive.",
+      "files": [
+        "image.jpg",
+        "image_qc.jpg",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/lidc-0078-n4"
+    },
+    {
+      "id": "ignite-luad-01",
+      "title": "Lung Adenocarcinoma \u2014 H&E #01",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 1,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-01/image.jpg",
+      "thumbnail": "cases/ignite-luad-01/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 4, Class 5, Class 6, Class 7, Class 9, Class 11, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f3",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f4",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f5",
+          "label": "Class 7",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 7. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e53935",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class07.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 7
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f8",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-01/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient9_he_roi8",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class07.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class11.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-01"
+    },
+    {
+      "id": "ignite-luad-02",
+      "title": "Lung Adenocarcinoma \u2014 H&E #02",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 2,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-02/image.jpg",
+      "thumbnail": "cases/ignite-luad-02/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 3, Class 4, Class 5, Class 6, Class 9, Class 10, Class 11, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f8",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f9",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-02/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient5_he_roi4",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class11.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-02"
+    },
+    {
+      "id": "ignite-luad-03",
+      "title": "Lung Adenocarcinoma \u2014 H&E #03",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 3,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-03/image.jpg",
+      "thumbnail": "cases/ignite-luad-03/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 3, Class 4, Class 5, Class 6, Class 8, Class 9, Class 11, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f4",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f5",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f6",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f7",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f8",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f9",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f10",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-03/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient65_he_roi1",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class11.png",
+        "overlay_class12.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-03"
+    },
+    {
+      "id": "ignite-luad-04",
+      "title": "Lung Adenocarcinoma \u2014 H&E #04",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 4,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-04/image.jpg",
+      "thumbnail": "cases/ignite-luad-04/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 9, Class 10, Class 11, Class 15.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f5",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f6",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f7",
+          "label": "Class 15",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 15. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#424242",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-04/overlay_class15.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 15
+        }
+      ],
+      "_roi_name": "patient58_he_roi2",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class11.png",
+        "overlay_class15.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-04"
+    },
+    {
+      "id": "ignite-luad-05",
+      "title": "Lung Adenocarcinoma \u2014 H&E #05",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 5,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-05/image.jpg",
+      "thumbnail": "cases/ignite-luad-05/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 8, Class 9, Class 10, Class 12.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f5",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f6",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f7",
+          "label": "Class 12",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 12. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#f48fb1",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-05/overlay_class12.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 12
+        }
+      ],
+      "_roi_name": "patient11_he_roi7",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class12.png",
+        "overlay_class14.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-05"
+    },
+    {
+      "id": "ignite-luad-06",
+      "title": "Lung Adenocarcinoma \u2014 H&E #06",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenocarcinoma",
+      "case_number": 6,
+      "total_in_group": 6,
+      "keywords": [
+        "adenocarcinoma",
+        "TTF-1",
+        "Napsin-A",
+        "EGFR",
+        "KRAS",
+        "ALK",
+        "lepidic",
+        "acinar",
+        "desmoplasia",
+        "AIS",
+        "CK7"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-luad-06/image.jpg",
+      "thumbnail": "cases/ignite-luad-06/thumb.jpg",
+      "description": "H&E ROI from lung adenocarcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 4, Class 6, Class 9, Class 10, Class 11, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f3",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f4",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f5",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f6",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f7",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-luad-06/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient3_he_roi7",
+      "_histological_subtype": "adenocarcinoma",
+      "files": [
+        "image.jpg",
+        "overlay.png",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class06.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class11.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-luad-06"
+    },
+    {
+      "id": "ignite-scc-01",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #01",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 1,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-01/image.jpg",
+      "thumbnail": "cases/ignite-scc-01/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 3, Class 4, Class 5, Class 8, Class 9, Class 10, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f4",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f5",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f6",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f7",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f8",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f9",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-01/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient1_he_roi9",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-01"
+    },
+    {
+      "id": "ignite-scc-02",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #02",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 2,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-02/image.jpg",
+      "thumbnail": "cases/ignite-scc-02/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 8, Class 9, Class 10, Class 12.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f5",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f6",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f7",
+          "label": "Class 12",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 12. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#f48fb1",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-02/overlay_class12.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 12
+        }
+      ],
+      "_roi_name": "patient1_he_roi14",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class12.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-02"
+    },
+    {
+      "id": "ignite-scc-03",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #03",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 3,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-03/image.jpg",
+      "thumbnail": "cases/ignite-scc-03/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 5, Class 6, Class 8, Class 9, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f6",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f7",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f8",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-03/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient4_he_roi4",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-03"
+    },
+    {
+      "id": "ignite-scc-04",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #04",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 4,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-04/image.jpg",
+      "thumbnail": "cases/ignite-scc-04/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 3, Class 4, Class 5, Class 8, Class 9, Class 10, Class 11.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f8",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-04/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        }
+      ],
+      "_roi_name": "patient67_he_roi2",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class11.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-04"
+    },
+    {
+      "id": "ignite-scc-05",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #05",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 5,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-05/image.jpg",
+      "thumbnail": "cases/ignite-scc-05/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 3, Class 4, Class 5, Class 7, Class 9.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f4",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f5",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f6",
+          "label": "Class 7",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 7. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e53935",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class07.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 7
+        },
+        {
+          "id": "f7",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-05/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        }
+      ],
+      "_roi_name": "patient1_he_roi4",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class07.png",
+        "overlay_class09.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-05"
+    },
+    {
+      "id": "ignite-scc-06",
+      "title": "Lung Squamous Cell Carcinoma \u2014 H&E #06",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Squamous Cell Carcinoma",
+      "case_number": 6,
+      "total_in_group": 6,
+      "keywords": [
+        "squamous cell carcinoma",
+        "p40",
+        "p63",
+        "CK5/6",
+        "keratin pearls",
+        "intercellular bridges",
+        "cavitation",
+        "central",
+        "PTHrP",
+        "hypercalcaemia"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-scc-06/image.jpg",
+      "thumbnail": "cases/ignite-scc-06/thumb.jpg",
+      "description": "H&E ROI from lung squamous cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 3, Class 4, Class 5, Class 8, Class 9, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f4",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f5",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f6",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f7",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f8",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-scc-06/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient1_he_roi2",
+      "_histological_subtype": "squamous_cell_carcinoma",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-scc-06"
+    },
+    {
+      "id": "ignite-lcc-01",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #01",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 1,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-01/image.jpg",
+      "thumbnail": "cases/ignite-lcc-01/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 8.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-01/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-01/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-01/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-01/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        }
+      ],
+      "_roi_name": "patient54_he_roi6",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class08.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-01"
+    },
+    {
+      "id": "ignite-lcc-02",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #02",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 2,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-02/image.jpg",
+      "thumbnail": "cases/ignite-lcc-02/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 5, Class 8, Class 9, Class 11.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-02/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        }
+      ],
+      "_roi_name": "patient60_he_roi2",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class11.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-02"
+    },
+    {
+      "id": "ignite-lcc-03",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #03",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 3,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-03/image.jpg",
+      "thumbnail": "cases/ignite-lcc-03/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 7, Class 8, Class 9, Class 15.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 7",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 7. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e53935",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class07.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 7
+        },
+        {
+          "id": "f5",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 15",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 15. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#424242",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-03/overlay_class15.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 15
+        }
+      ],
+      "_roi_name": "patient54_he_roi1",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class07.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class15.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-03"
+    },
+    {
+      "id": "ignite-lcc-04",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #04",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 4,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-04/image.jpg",
+      "thumbnail": "cases/ignite-lcc-04/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 8, Class 9.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-04/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-04/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-04/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-04/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f5",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-04/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        }
+      ],
+      "_roi_name": "patient54_he_roi5",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-04"
+    },
+    {
+      "id": "ignite-lcc-05",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #05",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 5,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-05/image.jpg",
+      "thumbnail": "cases/ignite-lcc-05/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 5, Class 8, Class 9, Class 11.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-05/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        }
+      ],
+      "_roi_name": "patient60_he_roi1",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class11.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-05"
+    },
+    {
+      "id": "ignite-lcc-06",
+      "title": "Lung Large Cell Carcinoma \u2014 H&E #06",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Large Cell Carcinoma",
+      "case_number": 6,
+      "total_in_group": 6,
+      "keywords": [
+        "large cell carcinoma",
+        "undifferentiated",
+        "diagnosis of exclusion",
+        "TTF-1 negative",
+        "p40 negative",
+        "poor prognosis"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-lcc-06/image.jpg",
+      "thumbnail": "cases/ignite-lcc-06/thumb.jpg",
+      "description": "H&E ROI from lung large cell carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 2, Class 4, Class 5, Class 8, Class 9.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 2",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 2. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#4cdc4c",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class02.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 2
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-lcc-06/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        }
+      ],
+      "_roi_name": "patient60_he_roi4",
+      "_histological_subtype": "large_cell",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class02.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-lcc-06"
+    },
+    {
+      "id": "ignite-adenosq-01",
+      "title": "Lung Adenosquamous Carcinoma \u2014 H&E #01",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenosquamous Carcinoma",
+      "case_number": 1,
+      "total_in_group": 2,
+      "keywords": [
+        "adenosquamous",
+        "mixed differentiation",
+        "glandular",
+        "squamous",
+        "aggressive",
+        "dual markers"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-adenosq-01/image.jpg",
+      "thumbnail": "cases/ignite-adenosq-01/thumb.jpg",
+      "description": "H&E ROI from lung adenosquamous carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 3, Class 4, Class 5, Class 6, Class 8, Class 9, Class 10, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f6",
+          "label": "Class 8",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 8. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#2e7d32",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class08.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 8
+        },
+        {
+          "id": "f7",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f8",
+          "label": "Class 10",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 10. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#9e9e9e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class10.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 10
+        },
+        {
+          "id": "f9",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-01/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient66_he_roi1",
+      "_histological_subtype": "adenosquamous",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class08.png",
+        "overlay_class09.png",
+        "overlay_class10.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-adenosq-01"
+    },
+    {
+      "id": "ignite-adenosq-02",
+      "title": "Lung Adenosquamous Carcinoma \u2014 H&E #02",
+      "topic": "Non-Small Cell Lung Cancer",
+      "system": "Pulmonary",
+      "modality": "pathology",
+      "submodality": "H&E Histology",
+      "disease_group": "Lung Adenosquamous Carcinoma",
+      "case_number": 2,
+      "total_in_group": 2,
+      "keywords": [
+        "adenosquamous",
+        "mixed differentiation",
+        "glandular",
+        "squamous",
+        "aggressive",
+        "dual markers"
+      ],
+      "source_dataset": "IGNITE data toolkit (DIAGNijmegen / Radboud UMC)",
+      "source_url": "https://zenodo.org/records/15674785",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_statement": "CC BY 4.0 \u2014 IGNITE data toolkit, DIAGNijmegen / Radboud UMC. Cite: arXiv:2507.16855. DOI: 10.5281/zenodo.15674785.",
+      "primary_citation": "IGNITE data toolkit: tissue and cell-level annotated H&E and PD-L1 histopathology in NSCLC. arXiv:2507.16855.",
+      "doi": "10.5281/zenodo.15674785",
+      "annotation_quality": "expert_ground_truth",
+      "annotation_quality_label": "Expert Ground Truth",
+      "annotation_method": "Expert pathologist pixel-level annotations (ASAP software), reviewed by label-review board \u2014 Radboud UMC / DIAGNijmegen",
+      "commercial_use": true,
+      "status": "available",
+      "image": "cases/ignite-adenosq-02/image.jpg",
+      "thumbnail": "cases/ignite-adenosq-02/thumb.jpg",
+      "description": "H&E ROI from lung adenosquamous carcinoma. Expert pixel-level annotations by pathologists at Radboud UMC (IGNITE dataset). Classes present: Class 1, Class 3, Class 4, Class 5, Class 6, Class 9, Class 11, Class 13.",
+      "findings": [
+        {
+          "id": "f1",
+          "label": "Class 1",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 1. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#00b4c8",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class01.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 1
+        },
+        {
+          "id": "f2",
+          "label": "Class 3",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 3. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ffd700",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class03.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 3
+        },
+        {
+          "id": "f3",
+          "label": "Class 4",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 4. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#ff8c00",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class04.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 4
+        },
+        {
+          "id": "f4",
+          "label": "Class 5",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 5. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#e040fb",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class05.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 5
+        },
+        {
+          "id": "f5",
+          "label": "Class 6",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 6. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#1a237e",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class06.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 6
+        },
+        {
+          "id": "f6",
+          "label": "Class 9",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 9. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#827717",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class09.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 9
+        },
+        {
+          "id": "f7",
+          "label": "Class 11",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 11. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#7b1fa2",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class11.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 11
+        },
+        {
+          "id": "f8",
+          "label": "Class 13",
+          "expert_note": "Expert-annotated tissue region \u2014 IGNITE class 13. See arXiv:2507.16855 for class definitions.",
+          "ai_explanation": "",
+          "color": "#b97a7a",
+          "type": "polygon",
+          "coords": [],
+          "overlay_png": "cases/ignite-adenosq-02/overlay_class13.png",
+          "_annotation_source": "IGNITE expert pathologist annotation (CC BY 4.0)",
+          "_class_id": 13
+        }
+      ],
+      "_roi_name": "patient66_he_roi4",
+      "_histological_subtype": "adenosquamous",
+      "files": [
+        "image.jpg",
+        "overlay_class01.png",
+        "overlay_class03.png",
+        "overlay_class04.png",
+        "overlay_class05.png",
+        "overlay_class06.png",
+        "overlay_class09.png",
+        "overlay_class11.png",
+        "overlay_class13.png",
+        "thumb.jpg"
+      ],
+      "base_url": "https://raw.githubusercontent.com/scrubscollaborative/step1-cases/main/cases/ignite-adenosq-02"
+    }
+  ]
+}

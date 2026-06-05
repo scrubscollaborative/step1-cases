@@ -1,0 +1,4 @@
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.svs filter=lfs diff=lfs merge=lfs -text
